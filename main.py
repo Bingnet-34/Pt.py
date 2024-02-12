@@ -12,7 +12,7 @@ Color:white;
 }
 """
 @config(css_style=css)
-def App():
+def main():
   put_image('https://images.alwatanvoice.com/news/large/9998983191.jpg', width='100%')
   put_image('https://i.pinimg.com/originals/ed/0e/87/ed0e87943ea3207d9a3f20b870541afd.gif',width='100%' )
   put_html("""
@@ -44,4 +44,4 @@ def App():
   """)
   put_image('https://cdn.dribbble.com/users/497438/screenshots/2084032/xtyf_1.gif', width='100%')
 
-start_server(App, port=443 , debug=True)
+start_server(main, port=8080 , debug=True)
